@@ -10,21 +10,25 @@ import Facebook from "./Facebook"
 
 
 
-
 function PortFront() {
 
     const [show, setShow]=useState(true)
 
     return (
         <div className="portFront">
-           
         
-        {
-            show?<Portfolio /> :<Facebook />
-        }
-        <div className="click__page" onClick={()=>setShow(!show)}/>
+        
+            {
+                show?<Portfolio setShow={setShow} show={show} /> :<Facebook setShow={setShow} show={show}/>
+            
+            }
+            {console.log(show)}
+
         </div>
+
     )
+
+    
 }
 
 export default PortFront

@@ -13,18 +13,19 @@ import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive"
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore"
 
 
-function Header() {
+function Header({show, setShow }) {
     return (
-      <div className="header">
-        <div className="header__left">
-            <img 
-                src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png"
-                alt=""
-            />
+      <div className="header" >
+        <div className="header__left" >
+                <img 
+                    src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png"
+                    alt=""
+                />
         </div>
+
         <div className="header__input">
             <SearchIcon />
-            <input placeholder="Search Facebook" type="text" />
+            <input placeholder="Search Facebook" type="text" onChange={()=>{setShow(!{show})}} />
         </div>
         
         <div className="header__middle">

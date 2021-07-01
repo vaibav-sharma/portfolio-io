@@ -11,9 +11,9 @@ import {Avatar, IconButton} from "@material-ui/core";
 
 
 
-export default function Portfolio() {
 
-  const [show, setShow]=useState(false);
+export default function Portfolio({show, setShow}) {
+
   return (
       <div class="page">
         <div class="header">
@@ -44,7 +44,7 @@ export default function Portfolio() {
             </h2>
         </div> 
         <div className="reel_front">
-        <Reel2 />
+        <Reel2 setShow={setShow} show={show}/>
         </div> 
       </div>    
   )

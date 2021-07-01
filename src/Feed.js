@@ -4,11 +4,11 @@ import "./Feed.css"
 import Reel from "./Reel"
 import Post from "./Post"
 
-function Feed() {
+function Feed({show, setShow}) {
     return (
         <div className="feed">
             <Reel />
-            <MessageSender />
+            <MessageSender setShow={setShow} show={show}/>
 
             <Post 
                 profilePic="https://i.pinimg.com/originals/1e/0e/8e/1e0e8eb4ee2d82681adaa4c61909ab4c.jpg"
