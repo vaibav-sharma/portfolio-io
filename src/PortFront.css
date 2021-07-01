@@ -3,15 +3,24 @@
     justify-content: space-evenly;
     background-color: white;
     z-index: 100;
-    box-shadow: 0px 5px 16px -9px rgba(0, 0, 0, 0.75);
+    height: 95vh;
 
 }
 
 .click__page {
-    height: 180px;
-    width: 90px;
+    height: 150px;
+
+    width: 70px;
     position: absolute;
-    margin: auto;
-    top: 390px;
-    left: 439px;
+    top: 410px;
+    left: 670px;
+}
+
+.avatar__details {
+    box-shadow: 0px 15px 10px -9px rgba(0, 0, 0, 0.75);
+
+}
+
+.reel_front {
+    padding: 10px;
 }

@@ -10,6 +10,7 @@ import Facebook from "./Facebook"
 
 
 
+
 function PortFront() {
 
     const [show, setShow]=useState(true)
@@ -22,7 +23,7 @@ function PortFront() {
             show?<Portfolio /> :<Facebook />
         }
         <div className="click__page" onClick={()=>setShow(!show)}/>
-          </div>
+        </div>
     )
 }
 

@@ -18,17 +18,18 @@
   display: flex;
   justify-content: space-evenly;
 }
-
 .messageSender__option {
   display: flex;
   padding: 20px;
   align-items: 5px;
   color:gray;
   margin: 10px;
+
 }
 
 .messageSender__option > h3 {
   margin-left: 10px;
+
 }
 
 .messageSender__top > form {

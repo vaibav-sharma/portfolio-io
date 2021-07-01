@@ -1,7 +1,12 @@
 .header__broad {
     background-color:#232f3e;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    height: 65px;
+    margin: auto;
+    flex: 1;
+    box-shadow: 0px 15px 10px -9px rgba(0, 0, 0, 0.75);
+
 
 }
 

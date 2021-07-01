@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import { Avatar } from "@material-ui/core"
 import Typical from "react-typical"
 import Header2 from "./Header2"
 import "./Portfolio.css"
@@ -7,6 +6,9 @@ import Reel2 from "./Reel2"
 import Fade from 'react-reveal/Fade';
 import { Route, Link } from "react-router-dom"
 import Facebook from "./Facebook"
+import {Avatar, IconButton} from "@material-ui/core";
+
+
 
 
 export default function Portfolio() {
@@ -20,12 +22,14 @@ export default function Portfolio() {
         
         
         <div className="content__middle">
-        
+          <IconButton>
+            <Fade>
             <Avatar className="avatar__details" 
             style={{ height: '150px', width: '150px' }}
             src={"https://i.pinimg.com/originals/1e/0e/8e/1e0e8eb4ee2d82681adaa4c61909ab4c.jpg"}/>
-            <h2>Hi, I'm Vaibav. I am a ...
-            
+            </Fade>
+          </IconButton>   
+            <h2>Hi, I'm Vaibav, a ...
             {' '}
             <Typical
               loop={2}
@@ -38,9 +42,10 @@ export default function Portfolio() {
               ]}
               />
             </h2>
-        </div>  
+        </div> 
+        <div className="reel_front">
         <Reel2 />
-
+        </div> 
       </div>    
   )
   

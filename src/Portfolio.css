@@ -10,12 +10,15 @@
 }
 .avatar__details {
   align-items: center;
+  margin-top: 30px;
 }
 
 
 .page {
   background-color: white;
-  
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 
   
 }
@@ -26,9 +29,5 @@
   align-content: center;
   justify-content: center;
   margin: auto;
-  display: block;
-}
-
-.header {
   display: block;
 }
