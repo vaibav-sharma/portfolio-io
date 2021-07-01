@@ -21,9 +21,9 @@
 .messageSender__option {
   display: flex;
   padding: 20px;
-  align-items: 5px;
+  align-items: center;
   color:gray;
-  margin: 10px;
+  margin: 5px;
 
 }
 
