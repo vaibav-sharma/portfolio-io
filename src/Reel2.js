@@ -41,7 +41,7 @@ function Reel2({show, setShow}) {
             <Story2 
             image="https://i0.wp.com/www.innermedia.co.uk/wp-content/uploads/2019/01/shutterstock_1184512540-520x520.jpg"
             profileSrc="https://api.time.com/wp-content/uploads/2015/02/180490609.jpg"
-            title="App2"
+            title="App"
             style={{ color: `black`}}
             />    
           </Fade> 
