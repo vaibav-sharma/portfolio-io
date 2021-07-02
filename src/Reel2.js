@@ -12,6 +12,7 @@ function Reel2({show, setShow}) {
 
   const [isHovering, setIsHovering] = useState(false);
 
+  
    const handleToggle = (e) => {
     e.preventDefault();
 
@@ -19,33 +20,32 @@ function Reel2({show, setShow}) {
     console.log(setIsHovering)
 
   };
+
      
       return (
         <div className="reel2">
     
-          <div className="facebook__app">
+          <div className="facebook__app" onClick={()=>{setShow(!{show})}}>
             <Fade left>  
               <Story2 
                 image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsVh_Cu55igPeR-ixQUV2VzvyWuZyYQhO3kziHt-251_FrrxHWvsDNLMa46IlpohY2FGc&usqp=CAU"
                 profileSrc="https://images.pexels.com/photos/1845534/pexels-photo-1845534.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                 title="App"
-                setShow={setShow} show={show}
                 />
             </Fade>
           </div>
 
-          
-        
+              
+       
           <Fade bottom>
-          <Story2 
-          image="https://i0.wp.com/www.innermedia.co.uk/wp-content/uploads/2019/01/shutterstock_1184512540-520x520.jpg"
-          profileSrc="https://api.time.com/wp-content/uploads/2015/02/180490609.jpg"
-          title="App"
-          setShow={setShow} show={show}
-
-          />    
-          </Fade>
-
+            <Story2 
+            image="https://i0.wp.com/www.innermedia.co.uk/wp-content/uploads/2019/01/shutterstock_1184512540-520x520.jpg"
+            profileSrc="https://api.time.com/wp-content/uploads/2015/02/180490609.jpg"
+            title="App"
+            />    
+          </Fade> 
+  
+          
           <Fade top>
             <Story2 
             image="https://brandlogos.net/wp-content/uploads/2020/03/Netflix-logo-Symbol-512x512.png"

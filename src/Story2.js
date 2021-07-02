@@ -1,23 +1,34 @@
 import { Avatar } from "@material-ui/core";
-import React from "react";
+import React, {useState} from "react"
 import "./Story2.css";
 import Fade from "react-reveal/Fade";
+import HeadShake from 'react-reveal/HeadShake';
 
+function Story({ image, profileSrc, title}) {
 
-
-function Story({ image, profileSrc, title, show, setShow }) {
-
+    const [body, setBody] = useState(true);
+    
 
     return (
         <div style={{ backgroundImage: `url(${image})` }}
         className="story"
-        onClick={()=>{setShow(!{show})}}>
-            <Fade left>
-            <Avatar className="story__avatar" src={profileSrc} />
-            </Fade>
-            <h4>{title}</h4>
-
+        onClick={(e)=>setBody(!body)}
+        >
+        {
+            body?<>
+                    <HeadShake>
+                        <Avatar className="story__avatar" src={profileSrc} />
+                    </HeadShake>
+                    <h4>{title}</h4>
+            </>:<>
+                <HeadShake>              
+                        <Avatar className="story__avatar" src={profileSrc} />
+                    <h4>{title}</h4>
+                </HeadShake>
+            </>
+        }
         </div>
+
     );
 }
 

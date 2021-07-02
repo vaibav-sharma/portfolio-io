@@ -18,5 +18,9 @@
     }
 }
 
-.facebook__app {
+.amazon__content {
+   border: 10px solid black;
+   transform: translate(100px);
+   opacity: 0;
 }
+
