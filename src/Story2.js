@@ -3,6 +3,9 @@ import React, {useState} from "react"
 import "./Story2.css";
 import Fade from "react-reveal/Fade";
 import HeadShake from 'react-reveal/HeadShake';
+import Wobble from 'react-reveal/Wobble';
+import RemoveCircleIcon from '@material-ui/icons/RemoveCircle';
+
 
 function Story({ image, profileSrc, title}) {
 
@@ -16,9 +19,9 @@ function Story({ image, profileSrc, title}) {
         >
         {
             body?<>
-                    <HeadShake>
+                    <Fade left>
                         <Avatar className="story__avatar" src={profileSrc} />
-                    </HeadShake>
+                    </Fade>
                     <h4>{title}</h4>
             </>:<>
                 <HeadShake>              
